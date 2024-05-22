@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Stroke Risk Diagnosis</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #212529; /* Darker text color for better readability */
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-custom {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        .jumbotron {
+            background: url('bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: #ffffff; /* White text color for contrast against background */
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: black;
+        }
+        .hero-text {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+        header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 2em;
+  color: #120e0e;
+  user-select: none;
+}
+
+.navigation a{
+
+  font: size 1.1em;
+  color: #0d0b0b;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 6px 15px;
+  transition: 0.5s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #333;
+  background-color: #7091E6; 
+  border-radius: 20px;
+}
+
+.navigation a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 30px;
+  z-index: -1;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.navigation a:hover span,
+.navigation a.active span {
+  transform: scale(1);
+  opacity: 1;
+}
+
+    </style>
+  <header>
+    <img src="/logoimg.png" alt="" height="60px" width="60px">
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<body>
+
+
+    <div class="jumbotron">
+        <h1 class="hero-title">No Stroke Risk Detected</h1>
+        <p class="hero-text">Our analysis, based on the GradientBoostingClassifier, indicates no stroke risk at this time. It's important to maintain regular health check-ups with a healthcare professional.</p>
+    </div>
+    <div id="lottie-animation" class="landing-animation"></div>
+
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'), // Required
+            path: '/Desktop/Mediconnectify_499_project-main/stroke_prediction/Animation - 1716288504517.json', // URL to the animation JSON
+            renderer: 'svg', // Rendering mode
+            loop: true, // Loop
+            autoplay: true // Autoplay
+        });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
